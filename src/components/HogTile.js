@@ -9,13 +9,16 @@ function HogTile({hogs}){
    }
     const hogsJSX = hogs.map(hogObj =>{
         return (
+            
+            
             <div key={hogObj.name} className="card" onClick={showHideCard}>
                 <div className="image" style={{pointerEvents: "none"}}>
                     <img src = {hogObj.image} alt={hogObj.name} ></img>
                 </div>
                 <div className="content" style={{pointerEvents: "none"}}>
                     <div className="header">
-                        {hogObj.name}
+                        <h2 className="ui header">{hogObj.name}</h2>
+                        
                     </div>
                     <div className="description" hidden={true}>
                         <p>Specialty: {hogObj.specialty}</p>

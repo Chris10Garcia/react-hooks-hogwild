@@ -4,15 +4,11 @@ import React from "react"
 // checkbox => 
 
 
-function Filter({pigData, handleGreaseFilter}){
+function Filter({ handleGreaseFilter}){
     return(
-        <div>
-            <h2>
-                <label>
-                    <input type="checkbox" name="grease" onChange={handleGreaseFilter}/>  
-                    {"    Filter by greased pigs?"}
-                </label>
-            </h2>
+        <div className="ui checkbox">
+            <input type="checkbox" name="grease" onChange={handleGreaseFilter} />  
+            <label><h3 className="ui header large">Filter by greased pigs?</h3></label>
         </div>
     )
 }

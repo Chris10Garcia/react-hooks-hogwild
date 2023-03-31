@@ -1,10 +1,10 @@
 import React from "react"
 
 
-function Button ({text, handlePigSort, id}){
+function Button ({text, handleClick, id}){
     return(
         <span>  
-            <button id={id} onClick = {handlePigSort} className="button"> {text} </button>  
+            <button id={id} onClick = {handleClick} className="button"> {text} </button>  
         </span>
     )
 }

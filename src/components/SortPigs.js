@@ -3,13 +3,13 @@ import Button from "./Button"
 
 
 
-function SortPigs( {handlePigSort}){
+function SortPigs( {handleClick, sortByText}){
 	return(
 	<div>
         <br></br>
-        <h3>Sort by name or weight:</h3>
-            <Button id = {"name"} text={"Name"} handlePigSort={handlePigSort}/>
-            <Button id = {"weight"} text={"Weight"} handlePigSort={handlePigSort}/>
+        <h3>{sortByText}</h3>
+            <Button id = {"name"} text={"Name"} handleClick={handleClick}/>
+            <Button id = {"weight"} text={"Weight"} handleClick={handleClick}/>
             <br></br>
             <br></br>
 	</div>
