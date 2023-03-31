@@ -1,0 +1,14 @@
+
+
+
+index.js
+|--- App
+    |--- Nav
+    |--- Hog Tile (State: Hog Data)
+        |--- Name, Picture (Hidden using attr) More Details
+    |--- Filter (State: Hog Data)
+    |--- SortPigs (State: Hog Data)
+        |--- Buttons
+            |--- Button
+    |--- Bonus: Hide 
+    |--- Bonus: Add form
