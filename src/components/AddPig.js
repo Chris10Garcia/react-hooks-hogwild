@@ -19,12 +19,12 @@ function AddPig({formData, handleChange, handleSubmit}){
 
     for (let key in buildForm){
         forminputsJSX.push(
-                <FormInputs formData={formData} 
-                            handleChange= {handleChange} 
-                            key = {key} 
-                            bttnPurpose={buildForm[key]}
-                />
-                )
+                            <FormInputs formData={formData} 
+                                        handleChange= {handleChange} 
+                                        key = {key} 
+                                        bttnPurpose={buildForm[key]}
+                            />
+                            )
     }
     
 //onClick= {(event)=>{event.preventDefault(); handleSubmit()}} 

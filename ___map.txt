@@ -2,7 +2,7 @@
 
 
 index.js
-|--- App
+|--- App (pigData + formData)
     |--- Nav
     |--- Hog Tile (State: Hog Data)
         |--- Name, Picture (Hidden using attr) More Details
@@ -11,4 +11,5 @@ index.js
         |--- Buttons
             |--- Button
     |--- Bonus: Hide 
-    |--- Bonus: Add form
+    |--- AddPig (State: formData)
+        |--- FormInputs
