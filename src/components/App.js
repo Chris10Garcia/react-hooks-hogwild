@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Nav from "./Nav";
-import HogTile from "./HogTile";
+import HogTiles from "./HogTiles";
 import hogs from "../porkers_data";
 import Filter from "./Filter";
 import SortPigs from "./SortPigs";
@@ -75,7 +75,7 @@ function App() {
 			<AddPig formData={formData} handleChange={handleChange} handleSubmit={handleSubmit}/>
 			<Filter handleGreaseFilter = {handleGreaseFilter}/>
 			<SortPigs sortByText={"Sort by name or weight:"} handleClick= {handlePigSort}/>
-			<HogTile hogs = {pigData} />
+			<HogTiles hogs = {pigData} />
 		</div>
 	);
 }
